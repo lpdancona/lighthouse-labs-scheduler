@@ -40,6 +40,6 @@ npm run storybook
 
 ## Final Product
 
-!["Browse interviews and available hours"]()
-!["Create your interview and choose the interviewer"]()
-!["Edit ot delete an existant interview"]()
+!["Browse interviews and available hours"](https://github.com/lpdancona/lighthouse-labs-scheduler/blob/master/docs/interviews.png?raw=true)
+!["Create your interview and choose your prefered interviewer"](https://github.com/lpdancona/lighthouse-labs-scheduler/blob/master/docs/create.png?raw=true)
+!["Edit ot delete an existant interview"](https://github.com/lpdancona/lighthouse-labs-scheduler/blob/master/docs/delete-and-edit.png?raw=true)
