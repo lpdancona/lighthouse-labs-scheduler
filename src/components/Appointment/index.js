@@ -66,13 +66,7 @@ export default function Appointment(props) {
         />
       )}
       {mode === CREATE && (
-        <Form
-          // student={props.interview.student}
-          // interviewer={props.interview.interviewer}
-          interviewers={props.interviewers}
-          onSave={save}
-          onCancel={back}
-        />
+        <Form interviewers={props.interviewers} onSave={save} onCancel={back} />
       )}
       {mode === SAVING && <Status message={"Saving"} />}
       {mode === DELETE && <Status message={"Deleting"} />}
@@ -87,6 +81,8 @@ export default function Appointment(props) {
         <Form
           student={props.interview.student}
           interviewers={props.interviewers}
+          interviewer={props.interview.interviewer}
+          name={props.interview.student}
           onSave={save}
           onCancel={back}
         />
@@ -95,7 +91,7 @@ export default function Appointment(props) {
         <Error
           message={"Could not create appointment"}
           onClose={() => {
-            transition(EMPTY);
+            transition(CREATE);
           }}
         />
       )}
