@@ -3,11 +3,11 @@ import InterviewerList from "components/InterviewerList";
 import Button from "components/Button";
 export default function Form(props) {
   const [name, setName] = useState(props.name || "");
+
   const [interviewer, setInterviewer] = useState(props.interviewer || null);
+
   const [error, setError] = useState("");
-  function handleInputChange(event) {
-    setName(event.target.value);
-  }
+
   const reset = () => {
     console.log("reset");
     setName("");

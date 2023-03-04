@@ -1,6 +1,7 @@
 # Interview Scheduler
 
 Interview Scheduler is a full stack web application that allows users to schedule, edit and delete interviews.
+In order for this project to work it has to run alongside scheduler-api; that contains the database and its where the information of the interviews is stored.
 
 ## Getting Started
 
@@ -18,6 +19,8 @@ Install dependencies with `npm install`.
 ```sh
 npm start
 ```
+
+also, npm start scheduler-api
 
 ## Running Jest Test Framework
 
