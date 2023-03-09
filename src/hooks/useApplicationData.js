@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 export default function useApplicationData() {
   const setDay = (day) => setState({ ...state, day });
@@ -41,7 +41,6 @@ export default function useApplicationData() {
         console.log(response);
       });
   }
-
   function cancelInterview(id) {
     const appointment = {
       ...state.appointments[id],

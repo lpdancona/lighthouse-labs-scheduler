@@ -81,7 +81,7 @@ export default function Appointment(props) {
         <Form
           student={props.interview.student}
           interviewers={props.interviewers}
-          interviewer={props.interview.interviewer}
+          interviewer={props.interview.interviewer.id}
           name={props.interview.student}
           onSave={save}
           onCancel={back}
@@ -91,7 +91,7 @@ export default function Appointment(props) {
         <Error
           message={"Could not create appointment"}
           onClose={() => {
-            transition(CREATE);
+            transition(EMPTY);
           }}
         />
       )}
