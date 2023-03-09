@@ -7,6 +7,7 @@ In order for this project to work it has to run alongside scheduler-api; that co
 
 - Install all dependencies (using the `npm install` command).
 - Run the development web server using the `npm start` command.
+- This application runs alongside with scheduler-api that should be ran so that the databses can be viewed by the website
 - Open your Browse and search http://localhost:8000/
 - Enjoy the app by scheduling, editing or deleting an interview 😃
 
