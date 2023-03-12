@@ -165,8 +165,6 @@ storiesOf("Appointment", module)
       onDelete={action("onDelete")}
     />
   ))
-  .add("onConfirm", () => <Confirm onConfirm={action("onConfirm")} />)
-  .add("onDelete", () => <Confirm onDelete={action("onDelete")} />)
   .add("Status", () => <Status message="Deleting" />)
   .add("Error", () => (
     <Error message="Could not delete appointment" onClose={action("onClose")} />
