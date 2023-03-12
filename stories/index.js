@@ -175,15 +175,6 @@ storiesOf("Appointment", module)
   .add("FormEdit", () => (
     <Form student="Lydia Miller-Jones" interviewers={interviewers} />
   ))
-  .add("FormEdit", () => (
-    <Form
-      student="Leonardo Dancona"
-      interviewer={3}
-      interviewers={interviewers}
-      onSave={action("onSave")}
-      onCancel={action("onCancel")}
-    />
-  ))
   .add("FormCreate", () => (
     <Form
       interviewers={interviewers}
