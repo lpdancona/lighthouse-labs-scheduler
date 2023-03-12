@@ -158,7 +158,13 @@ storiesOf("Appointment", module)
       interviewer={interviewer}
     />
   ))
-  .add("Confirm", () => <Confirm message="Delete the appointment?" />)
+  .add("Confirm", () => (
+    <Confirm
+      message="Delete the appointment?"
+      onConfirm={action("onConfirm")}
+      onDelete={action("onDelete")}
+    />
+  ))
   .add("onConfirm", () => <Confirm onConfirm={action("onConfirm")} />)
   .add("onDelete", () => <Confirm onDelete={action("onDelete")} />)
   .add("Status", () => <Status message="Deleting" />)
