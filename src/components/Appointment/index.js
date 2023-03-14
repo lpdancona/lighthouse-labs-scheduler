@@ -79,7 +79,6 @@ export default function Appointment(props) {
       )}
       {mode === EDIT && (
         <Form
-          student={props.interview.student}
           interviewers={props.interviewers}
           interviewer={props.interview.interviewer.id}
           name={props.interview.student}
@@ -91,7 +90,7 @@ export default function Appointment(props) {
         <Error
           message={"Could not create appointment"}
           onClose={() => {
-            transition(EDIT);
+            transition(CREATE);
           }}
         />
       )}
