@@ -90,7 +90,7 @@ export default function Appointment(props) {
         <Error
           message={"Could not create appointment"}
           onClose={() => {
-            transition(CREATE);
+            transition(back);
           }}
         />
       )}
